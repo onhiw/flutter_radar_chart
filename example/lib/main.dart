@@ -139,6 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       data: data,
                       reverseAxis: true,
                       useSides: useSides,
+                      ticksTextStyle:
+                          const TextStyle(color: Colors.grey, fontSize: 12),
+                      featuresTextStyle:
+                          const TextStyle(color: Colors.black, fontSize: 16),
                     )
                   : RadarChart.light(
                       ticks: ticks,
@@ -146,6 +150,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       data: data,
                       reverseAxis: true,
                       useSides: useSides,
+                      ticksTextStyle:
+                          const TextStyle(color: Colors.grey, fontSize: 12),
+                      featuresTextStyle:
+                          const TextStyle(color: Colors.black, fontSize: 16),
                     ),
             ),
           ],
