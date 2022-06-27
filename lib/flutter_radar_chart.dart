@@ -7,10 +7,10 @@ import 'package:flutter/material.dart';
 import 'dart:math' show pi, cos, sin;
 
 const defaultGraphColors = [
-  Colors.green,
-  Colors.blue,
-  Colors.red,
-  Colors.orange,
+  Color(0xFF1A2167),
+  Color(0xFFEF5696),
+  Color(0xFF1A2167),
+  Color(0xFFEF5696),
 ];
 
 class RadarChart extends StatefulWidget {
