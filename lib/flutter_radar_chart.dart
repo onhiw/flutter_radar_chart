@@ -33,8 +33,8 @@ class RadarChart extends StatefulWidget {
     this.reverseAxis = false,
     required this.ticksTextStyle,
     required this.featuresTextStyle,
-    this.outlineColor = Colors.black,
-    this.axisColor = Colors.grey,
+    this.outlineColor = Color(0xFFE8E8E8),
+    this.axisColor = Color(0xFFE8E8E8),
     this.graphColors = defaultGraphColors,
     this.sides = 0,
   }) : super(key: key);
