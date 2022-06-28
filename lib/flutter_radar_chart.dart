@@ -46,8 +46,8 @@ class RadarChart extends StatefulWidget {
     bool reverseAxis = false,
     bool useSides = false,
     required ticksTextStyle,
-    required outlineColor,
-    required axisColor,
+    outlineColor = Colors.black,
+    axisColor = Colors.grey,
     required featuresTextStyle,
   }) {
     return RadarChart(
@@ -69,8 +69,8 @@ class RadarChart extends StatefulWidget {
     required List<List<num>> data,
     bool reverseAxis = false,
     bool useSides = false,
-    required outlineColor,
-    required axisColor,
+    outlineColor = Colors.black,
+    axisColor = Colors.grey,
     required ticksTextStyle,
     required featuresTextStyle,
   }) {
