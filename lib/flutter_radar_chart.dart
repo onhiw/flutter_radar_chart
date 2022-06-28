@@ -33,8 +33,8 @@ class RadarChart extends StatefulWidget {
     this.reverseAxis = false,
     required this.ticksTextStyle,
     required this.featuresTextStyle,
-    this.outlineColor = Color(0xFFE8E8E8),
-    this.axisColor = Color(0xFFE8E8E8),
+    this.outlineColor = Colors.black,
+    this.axisColor = Colors.grey,
     this.graphColors = defaultGraphColors,
     this.sides = 0,
   }) : super(key: key);
@@ -46,12 +46,16 @@ class RadarChart extends StatefulWidget {
     bool reverseAxis = false,
     bool useSides = false,
     required ticksTextStyle,
+    required outlineColor,
+    required axisColor,
     required featuresTextStyle,
   }) {
     return RadarChart(
       ticks: ticks,
       features: features,
       data: data,
+      outlineColor: outlineColor,
+      axisColor: axisColor,
       reverseAxis: reverseAxis,
       sides: useSides ? features.length : 0,
       featuresTextStyle: featuresTextStyle,
@@ -65,6 +69,8 @@ class RadarChart extends StatefulWidget {
     required List<List<num>> data,
     bool reverseAxis = false,
     bool useSides = false,
+    required outlineColor,
+    required axisColor,
     required ticksTextStyle,
     required featuresTextStyle,
   }) {
@@ -74,8 +80,8 @@ class RadarChart extends StatefulWidget {
         data: data,
         featuresTextStyle: featuresTextStyle,
         ticksTextStyle: ticksTextStyle,
-        outlineColor: Colors.white,
-        axisColor: Colors.grey,
+        outlineColor: outlineColor,
+        axisColor: axisColor,
         reverseAxis: reverseAxis,
         sides: useSides ? features.length : 0);
   }
